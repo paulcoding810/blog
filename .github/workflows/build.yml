@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - feat/*
+      - gh-pages
 
   workflow_dispatch:
 
@@ -47,7 +47,7 @@ jobs:
       
       - uses: actions/cache@v4
         with:
-          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
+          path: ${{ env.HUGO_CACHEDIR }}
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
