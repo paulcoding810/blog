@@ -1,4 +1,16 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Paul Coding'
-theme = 'ananke'
+baseURL       = 'https://blog.paulcoding.com/'
+enableEmoji   = true
+languageCode  = 'en-us'
+paginate      = 100
+title         = 'Paul Coding'
+theme         = 'ananke'
+timeZone      = "Asia/Ho_Chi_Minh"
+
+[imaging]
+  # See https://github.com/disintegration/imaging
+  # CatmullRom is a sharp bicubic filter which should fit the docs site well with its many screenshots.
+  # Note that you can also set this per image processing.
+  resampleFilter    = "CatmullRom"
+  # Default JPEG quality setting. Default is 75.
+  quality           = 75
+  anchor            = "smart"
