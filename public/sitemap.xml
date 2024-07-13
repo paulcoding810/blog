@@ -3,9 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/code/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/configure-ssh-alias/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mongodb/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-13T08:42:43+07:00</lastmod>
   </url>
 </urlset>
