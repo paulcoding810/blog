@@ -101,17 +101,15 @@
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
       <a href="/posts/configure-ssh-alias/" class="link black dim">
-        Configure Ssh Alias
+        Configure Ssh Aliases
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Tutorial to connect your server with ssh alias ssh-keygen Create an ssh private/public keypair I named my key personal For passwordless experience, you could let passphrase empty.
-cd $HOME/.ssh ssh-keygen -t rsa Copy public key to server My server is 192.168.1.111. Do replace with yours.
-2.1. Manually copy
-2.2. Use ssh-copy-id
-Copy the public key to server
-ssh-copy-id -i personal root@192.168.1.111 Try login by password
-ssh &#39;root@192.168.1.111&#39; Chmod server&rsquo;s ssh files permission for security
+      Tutorial to connect your server with ssh alias This tutorial show you how to ssh to your server without rememering the server&rsquo;s ip
+ssh your_server 1. ssh-keygen Create an ssh private/public keypair.
+Here I named my key personal. Do replace yours.
+For passwordless experience, let passphrase be empty.
+cd $HOME/.ssh ssh-keygen -t rsa 2. Copy public key to server You can manully copy the public key or use the command for that
     </div>
     <a href="/posts/configure-ssh-alias/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
