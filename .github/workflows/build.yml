@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - gh-pages
 
   workflow_dispatch:
 
@@ -56,7 +55,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          TZ: America/Los_Angeles
+          TZ: Asia/Ho_Chi_Minh
         run: |
           hugo \
             --gc \
