@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ssh on My New Hugo Site</title>
+    <title>Ssh on Paul Coding</title>
     <link>http://localhost:1313/tags/ssh/</link>
-    <description>Recent content in Ssh on My New Hugo Site</description>
+    <description>Recent content in Ssh on Paul Coding</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Jul 2024 08:42:43 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configure Ssh Alias</title>
+      <title>Configure Ssh Aliases</title>
       <link>http://localhost:1313/posts/configure-ssh-alias/</link>
       <pubDate>Sat, 13 Jul 2024 08:42:43 +0700</pubDate>
       <guid>http://localhost:1313/posts/configure-ssh-alias/</guid>
-      <description>Tutorial to connect your server with ssh alias ssh-keygen Create an ssh private/public keypair. I named my key personal. Do replace yours. For passwordless experience, let passphrase empty. cd $HOME/.ssh ssh-keygen -t rsa Copy public key to server My server is 192.168.1.111. Do replace with yours.&#xA;2.1. Manually copy&#xA;Print and copy your public key cat ~/.ssh/personal.pub On your server, pass the public key to the end of $HOME/.ssh/authorized_keys&#xA;2.2. Use ssh-copy-id</description>
+      <description>Tutorial to connect your server with ssh alias This tutorial show you how to ssh to your server without rememering the server&amp;rsquo;s ip&#xA;ssh your_server 1. ssh-keygen Create an ssh private/public keypair.&#xA;Here I named my key personal. Do replace yours.&#xA;For passwordless experience, let passphrase be empty.&#xA;cd $HOME/.ssh ssh-keygen -t rsa 2. Copy public key to server You can manully copy the public key or use the command for that</description>
     </item>
   </channel>
 </rss>
