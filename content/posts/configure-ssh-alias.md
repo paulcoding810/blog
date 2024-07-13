@@ -3,7 +3,7 @@ title = 'Configure Ssh Aliases'
 tags = ["ssh"] 
 categories = ["Code"]
 date = 2024-07-13T08:42:43+07:00
-draft = true
+draft = false
 +++
 
 ## Tutorial to connect your server with ssh alias
