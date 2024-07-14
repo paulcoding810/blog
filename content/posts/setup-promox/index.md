@@ -2,6 +2,7 @@
 title = 'Setup Promox'
 date = 2024-07-13T23:22:13+07:00
 draft = true
+tags = ["server", "promox"] 
 +++
 
 ## Setup new Promox env
