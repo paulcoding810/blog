@@ -64,3 +64,13 @@ adb push avatar.jpg /storage/emulated/0/Download
 adb shell pm path com.kugou.shiqutouch
 adb pull "/data/app/~~xpKM66cgiEbqpkAmw5bUnQ==/com.kugou.shiqutouch-UG94g9pPeK1JHJrxI7yGfQ==/base.apk" ~/Downloads/app.apk
  ```
+
+## Config
+
+[reference](https://stackoverflow.com/questions/49056918/how-to-enable-show-touches-developer-option-from-adb-shell#comment112321959_49056919)
+
+```sh
+adb shell settings list system
+# show touches
+adb shell settings put system show_touches 1
+```
