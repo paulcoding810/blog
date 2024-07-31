@@ -1,11 +1,13 @@
-+++
-title = 'Configure SSH Aliases'
-tags = ["ssh"] 
-categories = ["Code"]
-date = 2024-07-13T08:42:43+07:00
-summary = 'How to connect to your server quickly using SSH Alias.'
-draft = true
-+++
+---
+categories:
+- Code
+date: "2024-07-13T08:42:43+07:00"
+draft: false
+summary: How to connect to your server quickly using SSH Alias.
+tags:
+- ssh
+title: Configure SSH Aliases
+---
 
 ## Tutorial to connect your server with ssh alias
 

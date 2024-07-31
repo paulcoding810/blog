@@ -1,9 +1,9 @@
-+++
-title = 'Git Profiles'
-summary = 'No more git config name and email. Git profiles will handle that for you.'
-date = 2024-07-22T21:26:41+07:00
-draft = false
-+++
+---
+date: "2024-07-22T21:26:41+07:00"
+draft: false
+summary: No more git config name and email. Git profiles will handle that for you.
+title: Git Profiles
+---
 
 ## What is it?
 

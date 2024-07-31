@@ -1,11 +1,14 @@
-+++
-title = 'Common ADB Commnands'
-summary = 'List of my most used ADB commnad'
-tags = ['adb', 'android'] 
-categories = ["Code"]
-date = 2024-07-22T09:22:25+07:00
-draft = false
-+++
+---
+categories:
+- Code
+date: "2024-07-22T09:22:25+07:00"
+draft: false
+summary: List of my most used ADB commnad
+tags:
+- adb
+- android
+title: Common ADB Commnands
+---
 
 ## Wireless adb
 
