@@ -50,3 +50,8 @@ Explain:
 That's it! Now, each time you create or clone a new project. Git will automatically determine the correct profile for you! 😎
 
 ![result](test-profile.png)
+
+## Reference
+
+- [multipleGitProfiles](https://gist.github.com/Icaruk/f024a18093dc28ec1588cfb90efc32f7)
+- [toggling between work account / personal account](https://www.reddit.com/r/git/comments/195gg0h/comment/kjuscfl/)
