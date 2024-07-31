@@ -1,0 +1,8 @@
+.main {
+  max-width: max-content;
+}
+
+div.post-content tr th {
+  min-width: 250px;
+}
+
