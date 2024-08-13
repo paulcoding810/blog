@@ -77,3 +77,17 @@ adb shell settings list system
 # show touches
 adb shell settings put system show_touches 1
 ```
+
+## Utils
+
+Some other useful adb functions that I'm using:
+
+Source [this bash script](https://raw.githubusercontent.com/longnghia/dotfiles/main/.zsh/adb.zsh). Which is located in [config setup](/).
+
+- `adbd`: adb devices
+- `adbx`: select device and assign to adb when there're multiple devicces
+- `adbc`: setup reverse tcpip
+- `adbr`: record and pull video file to ~/Downloads
+- `adbc`: capture screen to clipboard
+- `adbi`: adb install list of apks
+- `mitm`: preparing for mitm
