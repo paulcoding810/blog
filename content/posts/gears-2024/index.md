@@ -1,6 +1,6 @@
 ---
 date: "2024-07-30T11:15:30+07:00"
-draft: true
+draft: false
 summary: Tech Gears I used in 2024
 title: Gears 2024
 ---
@@ -82,3 +82,9 @@ Neutral
 ![Go Pro Hero 9](gopro_hero_9.png)
 
 Nah.
+
+## Macbook M2 Pro (32GB-512GB)
+
+About to receive 🤤
+
+![Macbook M2 Pro](macbook_m2_pro.png)
