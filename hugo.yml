@@ -46,11 +46,11 @@ params:
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "assets/favicon.ico"
+    favicon16x16: "assets/favicon.ico"
+    favicon32x32: "assets/favicon.ico"
+    apple_touch_icon: "assets/favicon.ico"
+    safari_pinned_tab: "assets/favicon.ico"
 
   label:
     text: "Home"
@@ -79,19 +79,19 @@ params:
 
   socialIcons:
     - name: x
-      url: "https://x.com/"
+      url: "https://x.com/Long36691455"
     - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://stackoverflow.com/users/16443979/paul"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/longnghia"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -99,7 +99,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/longnghia/blog/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
