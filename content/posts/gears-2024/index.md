@@ -35,7 +35,7 @@ Not much. Neutral. Only for Call and Bank.
 
 ![Oneplus 6T](./oneplus_6T.png)
 
-Best. Lineage. Totally sastisfied
+Best. Lineage. Frida. Sastisfied
 
 ## Nas
 
@@ -83,8 +83,9 @@ Neutral
 
 Nah.
 
-## Macbook M2 Pro (32GB-512GB)
+## Macbook M2 Pro (32GB-1TB)
 
-About to receive 🤤
+Comming soon 🤤
+"Best of the best of the best"
 
 ![Macbook M2 Pro](macbook_m2_pro.png)
