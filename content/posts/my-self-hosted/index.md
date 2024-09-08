@@ -36,7 +36,7 @@ This page lists the various self-hosted services I run on my home server. Each s
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/gitea.png" alt="Gitea" width="16" height="16" >}} [Gitea](https://about.gitea.com/)
 : A painless self-hosted Git service. Provides a GitHub-like interface for personal projects.
 
-{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudcmd.png" alt="Cloud Commander" width="16" height="16" >}} [Cloud Commander](https://cloudcmd.io/)
+{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/cloudcmd.png" alt="Cloud Commander" width="16" height="16" >}} [Cloud CMD](https://cloudcmd.io/)
 : Web file manager with console and editor. Allows remote file management through a web interface.
 
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/qbittorrent.png" alt="qBittorrent" width="16" height="16" >}} [qBittorrent](https://www.qbittorrent.org/)
@@ -47,7 +47,7 @@ This page lists the various self-hosted services I run on my home server. Each s
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/glances.png" alt="Glances" width="16" height="16" >}} [Glances](https://nicolargo.github.io/glances/)
 : Cross-platform system monitoring tool. Provides a comprehensive view of system resources.
 
-{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/speedtest-tracker.png" alt="Speedtest Tracker" width="16" height="16" >}} [Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)
+{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/speedtest-tracker.png" alt="Speedtest Tracker" width="16" height="16" >}} [Speedtest](https://github.com/henrywhitaker3/Speedtest-Tracker)
 : Continuously track your internet speed. Helps monitor ISP performance over time.
 
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/scrutiny.png" alt="Scrutiny" width="16" height="16" >}} [Scrutiny](https://github.com/AnalogJ/scrutiny)
