@@ -1,5 +1,6 @@
 ---
 date: '2024-09-08T10:06:54+07:00'
+lastmod: '2024-09-10T22:08:00+07:00'
 draft: false
 title: 'My Self-hosted Services'
 summary: 'List of my self-hosted containers and their purposes'
@@ -18,6 +19,12 @@ This page lists the various self-hosted services I run on my home server. Each s
 
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/pi-hole.png" alt="Pi-hole" width="16" height="16" >}} [Pi-hole](https://pi-hole.net/)
 : Network-wide ad blocking and DNS sinkhole. It blocks ads and trackers at the network level, improving browsing speed and privacy.
+
+{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/openvpn.png" alt="OpenVPN" width="16" height="16" >}} [OpenVPN](https://openvpn.net/)
+: Open-source VPN solution. Provides secure remote access to my home network from anywhere.
+
+{{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/wireguard.png" alt="WireGuard" width="16" height="16" >}} [WireGuard](https://www.wireguard.com/)
+: Fast, modern, and secure VPN tunnel. Offers an alternative to OpenVPN with improved performance and simplicity.
 
 ## Tools
 
