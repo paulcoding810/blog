@@ -1,5 +1,6 @@
 ---
 date: '2024-09-04T15:25:38+07:00'
+date_mod: '2024-09-17T09:23:00+07:00'
 draft: false
 title: 'Setting Up Your Own VPN: A Simple Guide for Home Networks'
 summary: 'Learn how to create a secure gateway to your home network using a personal VPN'
@@ -79,8 +80,13 @@ Tell your router to let VPN traffic through:
 ### 3. Making Your Home Network Findable (DDNS Setup)
 
 If your home IP address changes, DDNS helps your VPN stay connected:
-- No-IP: Free, but you need to log in regularly
+- No-IP: Free, but you need to log in regularly (I used to use it as it's supported by my router)
 - DuckDNS: Also free, and doesn't require logins (check if your router supports it)
+- Cloudflare DDNS: My current solution.
+
+  If you have a domain on cloudflare (zone), you could leverage its useful [api](https://developers.cloudflare.com/dns/manage-dns-records/how-to/managing-dynamic-ip-addresses/) to keep your domain's ip updated. This can be achieved easily by cronjob, or a [Docker container](https://github.com/timothymiller/cloudflare-ddns) running at your host.
+
+After this you could update your config file from step 1 to point to the domain name instead of IP.
 
 ### 4. Connecting Your Devices
 
