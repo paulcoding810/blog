@@ -1,6 +1,5 @@
 baseURL: "https://blog.paulcoding.com/"
 title: Paul Coding
-paginate: 5
 theme: PaperMod
 enableEmoji: true
 languageCode: "en-us"
@@ -10,6 +9,11 @@ enableRobotsTXT: true
 # buildDrafts: false
 # buildFuture: false
 # buildExpired: false
+
+pagination:
+  disableAliases: false
+  pagerSize: 10
+  path: page
 
 minify:
   disableXML: true
@@ -42,6 +46,7 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  social: true
 
   assets:
     disableHLJS: true # to disable highlight.js
