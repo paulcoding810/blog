@@ -82,7 +82,7 @@ adb shell settings put system show_touches 1
 
 Some other useful adb functions that I'm using:
 
-Source [this bash script](https://raw.githubusercontent.com/longnghia/dotfiles/main/.zsh/adb.zsh). Which is located in [config setup](https://www.atlassian.com/git/tutorials/dotfiles).
+Source [this bash script](https://raw.githubusercontent.com/paulcoding810/dotfiles/main/.zsh/adb.zsh). Which is located in [config setup](https://www.atlassian.com/git/tutorials/dotfiles).
 
 - `adbd`: adb devices
 - `adbx`: select device and assign to adb when there're multiple devicces
@@ -90,4 +90,4 @@ Source [this bash script](https://raw.githubusercontent.com/longnghia/dotfiles/m
 - `adbr`: record and pull video file to ~/Downloads
 - `adbc`: capture screen to clipboard
 - `adbi`: adb install list of apks
-- `mitm`: preparing for mitm (for ssl-spinning app, you could use [apk-patcher](https://github.com/longnghia/apk-patcher) to patch [apk-mitm pattern](https://github.com/shroudedcode/apk-mitm))
+- `mitm`: preparing for mitm (for ssl-spinning app, you could use [apk-patcher](https://github.com/paulcoding810/apk-patcher) to patch [apk-mitm pattern](https://github.com/shroudedcode/apk-mitm))
