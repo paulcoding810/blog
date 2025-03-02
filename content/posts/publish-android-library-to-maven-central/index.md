@@ -12,6 +12,8 @@ tags:
 - gradle
 ---
 
+- Updated on 2025-02-22 [Added Github Actions section](#github-actions)
+
 ## Introduction
 
 This guide explains how to publish an Android library to Maven Central using the Gradle Maven Publish Plugin.
@@ -125,6 +127,26 @@ mavenCentralPassword=the_password
 signing.keyId=12345678
 signing.password=some_password
 signing.secretKeyRingFile=~/.gnupg/secring.gpg
+```
+
+### Github Actions
+
+Get the `signingInMemoryKey` by running the following command:
+
+```sh
+gpg --export-secret-keys --armor keyId secretKeyRingFile | grep -v '\-\-' | grep -v '^=.' | tr -d '\n'
+```
+
+Add secrets to github actions:
+
+```yaml
+- name: Publish to Maven Local
+        run: ./gradlew publishToMavenLocal
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.SONATYPE_NEXUS_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.SONATYPE_NEXUS_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_PRIVATE_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_PASSWORD }}
 ```
 
 ### Publishing
