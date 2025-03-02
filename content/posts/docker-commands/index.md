@@ -5,18 +5,21 @@ draft: false
 title: 'Essential Docker Commands for Daily Use'
 summary: 'A comprehensive guide to commonly used Docker and Docker Compose commands'
 categories:
-  - Development
-  - DevOps
+
+- Development
+- DevOps
 tags:
-  - Docker
-  - Docker Compose
-  - Containers
-  - CLI
+- Docker
+- Docker Compose
+- Containers
+- CLI
+
 ---
 
 ## Basic Docker Compose Commands
 
 ### Starting Containers
+
 ```bash
 # Start containers in detached mode
 docker compose up -d
@@ -26,6 +29,7 @@ docker compose up -d service_name
 ```
 
 ### Stopping Containers
+
 ```bash
 # Stop and remove containers
 docker compose down
@@ -35,6 +39,7 @@ docker compose down -v
 ```
 
 ### Viewing Logs
+
 ```bash
 # Follow logs in real-time
 docker compose logs -f
@@ -44,6 +49,7 @@ docker compose logs -f service_name
 ```
 
 ### Accessing Containers
+
 ```bash
 # Access container shell
 docker compose exec container_name bash
@@ -55,6 +61,7 @@ docker compose exec container_name command
 ## Additional Useful Commands
 
 ### Container Management
+
 ```bash
 # List running containers
 docker compose ps
@@ -64,7 +71,12 @@ docker compose restart
 
 # View resource usage
 docker compose top
-```
+
+# View container stats
+docker stats --no-stream
+
+# Sort containers by resource usage, by memory descending
+docker stats --no-stream --format "table {{.Container}}\t{{.MemUsage}}" | sort -k2 -r
 
 ### Building Images
 ```bash
@@ -76,6 +88,7 @@ docker compose build --no-cache
 ```
 
 ### Troubleshooting
+
 ```bash
 # Check compose configuration
 docker compose config
