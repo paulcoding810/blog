@@ -107,7 +107,7 @@ Check your Cloudflare dashboard to confirm that the subdomains have been added:
 
 ## Additional Notes
 
-If you're using Caddy as your web server, it provides a plugin called `caddy-dynamicdns` that can perform similar DDNS updates. For more information, see our [Caddy guide](/posts/host-your-saas-with-caddy/).
+If you're using Caddy as your web server, it provides a plugin called `caddy-dynamicdns` that can perform similar DDNS updates. For more information, see my [Caddy guide](/posts/host-your-saas-with-caddy/).
 
 ## References
 
