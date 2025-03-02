@@ -3,7 +3,14 @@ date: "2024-07-22T21:26:41+07:00"
 draft: false
 summary: No more git config name and email. Git profiles will handle that for you.
 title: Git Profiles
+categories:
+- Code
+tags:
+- ssh
+- git
 ---
+
+- Update Mar 2nd, 2025: [Add signing commits](#sign-commits)
 
 ## What is it?
 
@@ -44,6 +51,24 @@ Explain:
 
 - The first `include` tells Git to apply the personal profile for *every* path. This is considered the default profile.
 - The `includeIf` directives tells git to apply the `work1.config` for every path under `~/work1/`, and `work2.config` for subfolders of `~/work2/`
+
+## Sign commits
+
+To sign commits, you can add the following lines to the profile configuration.
+(Or run `git config --global commit.gpgSign true` to enable it globally.)
+
+```conf
+[user]
+  email = 41385034+fixthebug@users.noreply.github.com
+  name = fixthebug
+  signingkey = ~/.ssh/personal
+[core]
+  sshCommand="ssh -i ~/.ssh/personal"
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+```
 
 ## Conclusion
 
