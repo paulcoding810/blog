@@ -244,6 +244,27 @@ context.optimizationLevel = -1 // Disable JIT for better debugging
 context.setGeneratingDebug(true) // Generate debug info
 ```
 
+### Troubleshooting
+
+Common issues and solutions when working with Rhino:
+
+#### Syntax Errors
+- Error: "missing ; before statement (#15)"
+  - Cause: Using Kotlin keywords (like `val`) in JavaScript code
+  - Solution: Replace Kotlin keywords with JavaScript equivalents (use `var` or `let`)
+
+#### Type Conversion Issues
+- Error: "stack overflow: unexpected Object instead of string"
+  - Cause: Automatic type conversion failing between JavaScript and Kotlin
+  - Solution: Explicitly convert objects to strings using `String()` or `toString()`
+  - Example: `String(title)` instead of just `title`
+
+#### Other Tips
+- Always check JavaScript syntax is valid
+- Use strict mode (`'use strict';`) to catch errors early
+- Enable debugging as shown in debugging section above
+
+
 ---
 
 This cheatsheet should cover most use cases of Mozilla Rhino in **Kotlin**. For advanced details, refer to the [official Rhino documentation](https://github.com/mozilla/rhino).
