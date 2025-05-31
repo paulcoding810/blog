@@ -1,6 +1,6 @@
 ---
 date: "2025-05-31T20:58:38+07:00"
-draft: true
+draft: false
 title: "Android Modularization"
 summary: "A guide to modularizing Android applications for better organization and efficiency."
 categories:

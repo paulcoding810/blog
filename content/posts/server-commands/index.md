@@ -1,6 +1,6 @@
 ---
 date: "2025-05-31T21:20:00+07:00"
-draft: true
+draft: false
 title: "Server Commands"
 summary: "A collection of useful server commands for system monitoring and management."
 categories:

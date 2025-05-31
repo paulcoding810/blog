@@ -1,6 +1,6 @@
 ---
 date: "2025-05-31T21:32:00+07:00"
-draft: true
+draft: false
 title: "Fixing 'Unable to Access Default Device–Set' in Xcode"
 summary: "A guide to resolving the 'Unable to Access Default Device–Set' error in Xcode when creating a new simulator."
 categories:
