@@ -1,8 +1,222 @@
-.main {
+.post-content {
   max-width: max-content;
+  font-size: 14px;
 }
 
-div.post-content tr th {
-  min-width: 250px;
+.devsite-table-wrapper {
+  --devsite-caution-notice-background: #feefe3;
+  --devsite-caution-notice-border-color: transparent;
+  --devsite-caution-notice-color: #b31412;
+  --devsite-key-point-notice-background: #e8eaf6;
+  --devsite-key-point-notice-border-color: transparent;
+  --devsite-key-point-notice-color: #3f51b5;
+  --devsite-key-term-notice-background: #f3e8fd;
+  --devsite-key-term-notice-border-color: transparent;
+  --devsite-key-term-notice-color: #9334e6;
+  --devsite-note-notice-background: #e8f0fe;
+  --devsite-note-notice-border-color: transparent;
+  --devsite-note-notice-color: #303f9f;
+  --devsite-status-notice-background: #f1f3f4;
+  --devsite-status-notice-border-color: transparent;
+  --devsite-status-notice-color: #546e7a;
+  --devsite-success-notice-background: #e0f2f1;
+  --devsite-success-notice-border-color: transparent;
+  --devsite-success-notice-color: #00796b;
+  --devsite-warning-notice-background: #fce8e6;
+  --devsite-warning-notice-border-color: transparent;
+  --devsite-warning-notice-color: #a50e0e;
+
+  --devsite-code-font-family: Roboto Mono, monospace;
+  --devsite-heading-font-family: Google Sans, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  --devsite-primary-font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  --devsite-h1-margin: 40px 0 20px;
+  --devsite-h2-margin: 40px 0 20px;
+  --devsite-h4-font: 500 16px/24px var(--devsite-primary-font-family);
+  --devsite-h5-font: 700 14px/24px var(--devsite-primary-font-family);
+  --devsite-h6-font: 500 14px/24px var(--devsite-primary-font-family);
+  --devsite-background-0: #e8eaed;
+  --devsite-background-1: #fff;
+  --devsite-background-2: #f8f9fa;
+  --devsite-background-3: #f1f3f4;
+  --devsite-background-4: #e8eaed;
+  --devsite-background-5: #dadce0;
+  --devsite-primary-text-color: #202124;
+  --devsite-primary-text-rgba: rgba(0, 0, 0, .87);
+  --devsite-secondary-text-color: #5f6368;
+  --devsite-secondary-text-rgba: rgba(0, 0, 0, .65);
+  --devsite-tertiary-text-color: #bdc1c6;
+  --devsite-tertiary-text-rgba: rgba(0, 0, 0, .26);
+  --devsite-inverted-text-color: #fff;
+  --devsite-inverted-text-color-hover: hsla(0, 0%, 100%, .7);
+  --devsite-inverted-text-rgba: hsla(0, 0%, 100%, .7);
+  --devsite-primary-border: 1px solid #dadce0;
+  --devsite-secondary-border: 1px solid #e8eaed;
+  --devsite-elevation-key-shadow-color: rgba(60, 64, 67, .3);
+  --devsite-elevation-ambient-shadow-color: rgba(60, 64, 67, .15);
+  --devsite-elevation-inset-shadow-color: hsla(210, 6%, 63%, .5);
+  --tenant-background-1: #fff;
+  --tenant-background-2: #f8f9fa;
+  --tenant-background-3: #f1f3f4;
+  --tenant-primary-text-color: #202124;
+  --tenant-secondary-text-color: #5f6368;
+  --tenant-inverted-text-color: #fff;
+  --tenant-primary-border: 1px solid #dadce0;
+  --tenant-secondary-border: 1px solid #e8eaed;
+  --devsite-link-background: #d2e3fc;
+  --devsite-link-background-active: #e8f0fe;
+  --devsite-link-color: #1a73e8;
+  --devsite-contrast-link-color: #185abc;
+  --devsite-button-background-hover: #e4eefc;
+  --devsite-button-background-active: #c8ddf9;
+  --devsite-button-color: #1a73e8;
+  --devsite-banner-archived-background: #fce8e6;
+  --devsite-banner-archived-color: #a50e0e;
+  --devsite-banner-confidential-background: #feefe3;
+  --devsite-banner-confidential-color: #a50e0e;
+  --devsite-banner-deprecated-background: #fef7e0;
+  --devsite-banner-deprecated-color: #a50e0e;
+  --devsite-label-cyan-background: #e4f7fb;
+  --devsite-label-cyan-color: #007b83;
+  --devsite-label-google-blue-background: #e8f0fe;
+  --devsite-label-google-blue-color: #174ea6;
+  --devsite-label-google-green-background: #e6f4ea;
+  --devsite-label-google-green-color: #0d652d;
+  --devsite-label-google-red-background: #fce8e6;
+  --devsite-label-google-red-color: #a50e0e;
+  --devsite-label-google-yellow-background: #fef7e0;
+  --devsite-label-google-yellow-color: #a50e0e;
+  --devsite-label-grey-background: #f8f9fa;
+  --devsite-label-grey-color: #202124;
+  --devsite-label-orange-background: #feefe3;
+  --devsite-label-orange-color: #b06000;
+  --devsite-label-pink-background: #fde7f3;
+  --devsite-label-pink-color: #9c166b;
+  --devsite-label-purple-background: #f3e8fd;
+  --devsite-label-purple-color: #681da8;
+  --devsite-label-white-background: #fff;
+  --devsite-label-white-color: #202124;
+  --devsite-label-youtube-red-background: #fce8e6;
+  --devsite-label-youtube-red-color: #c20000;
+  --devsite-button-primary-background: #1a73e8;
+  --devsite-button-primary-background-hover: #1765cc;
+  --devsite-button-primary-background-active: #185abc;
+  --devsite-button-primary-color: #fff;
+  --devsite-notice-margin: 16px 0;
+  --devsite-notice-padding-block: 15px;
+  --devsite-notice-padding-inline: 24px 24px;
+  --devsite-book-nav-background: var(--devsite-background-1);
+  --devsite-concierge-top: 48px;
+  --devsite-concierge-width-closed: 54px;
+  --devsite-concierge-width-open: 387px;
+  --devsite-concierge-width: 0px;
+  --devsite-card-background: var(--devsite-background-1);
+  --devsite-card-header-background: var(--devsite-background-3);
+  --devsite-checkbox-border-radius: 2px;
+  --devsite-checkbox-icon-canvas-border-radius: 50%;
+  --devsite-checkbox-icon-canvas-offset-x: -9px;
+  --devsite-checkbox-icon-canvas-offset-y: -9px;
+  --devsite-checkbox-icon-canvas-size: 36px;
+  --devsite-checkbox-margin-block: -2px 2px;
+  --devsite-checkbox-margin-inline: 0 8px;
+  --devsite-checkbox-offset-x: 3px;
+  --devsite-checkbox-offset-y: -3px;
+  --devsite-checkbox-size: 18px;
+  --devsite-feature-tooltip-background-color: #1a73e8;
+  --devsite-feature-tooltip-offset-y: 3px;
+  --devsite-input-background: var(--devsite-background-1);
+  --devsite-input-border: var(--devsite-secondary-border);
+  --devsite-landing-row-item-gap: 24px;
+  --devsite-mdc-line-height: 56px;
+  --devsite-scrollbar-thumb-background: hsla(207, 5%, 52%, .26);
+  --devsite-select-background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4"><path d="M0,0l4,4l4-4H0z" fill="%23202124"/></svg>');
+  --devsite-select-border-radius: 2px --devsite-notice-border-radius: 4px;
+
+  margin: 16px 0px;
+  overflow: auto;
 }
 
+table {
+  --devsite-table-cell-padding: 15px 16px 16px;
+  --devsite-table-code-background: #f8f9fa;
+  --devsite-table-code-border: 1px solid #dadce0;
+  --devsite-table-code-border-radius: 4px;
+  --devsite-table-code-padding: 1px 4px;
+  --devsite-table-heading-background: #f1f3f4;
+  --devsite-table-heading-color: #000;
+  --devsite-table-heading-padding: 16px;
+  --devsite-responsive-table-first-column-background: #f8f9fa;
+  --devsite-responsive-table-heading-padding: 14px 16px;
+}
+
+.devsite-table-wrapper table {
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: 14px/20px;
+  margin: 16px 0 15px;
+  width: 100%;
+
+  .beta,
+  .experimental,
+  .note,
+  .preview,
+  .special,
+  .tip,
+  aside {
+    background: var(--devsite-note-notice-background);
+    border-color: var(--devsite-note-notice-border-color);
+    color: var(--devsite-note-notice-color);
+  }
+
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+
+    th,
+    th code {
+      background: var(--devsite-table-heading-background, #e8eaed);
+      color: var(--devsite-table-heading-color,
+          var(--devsite-primary-text-color));
+    }
+  }
+
+  td {
+    padding: var(--devsite-table-cell-padding, 7px 8px 8px);
+
+    .beta,
+    .caution,
+    .deprecated,
+    .dogfood,
+    .experimental,
+    .key-point,
+    .key-term,
+    .note,
+    .objective,
+    .preview,
+    .special,
+    .success,
+    .tip,
+    .warning,
+    aside {
+      border-top: 1px solid var(--devsite-notice-border-color, transparent);
+      border-bottom: 1px solid var(--devsite-notice-border-color, transparent);
+      border-radius: var(--devsite-notice-border-radius, 0);
+      display: block;
+      font-size: 14px;
+      margin: var(--devsite-notice-margin);
+      padding-block: var(--devsite-notice-padding-block);
+      padding-inline: var(--devsite-notice-padding-inline);
+    }
+  }
+
+
+  table.responsive td tr:not(.alt) td:first-child,
+  table.responsive tr:not(.alt) td td:first-child,
+  td {
+    background: var(--devsite-table-cell-background);
+    vertical-align: top;
+  }
+}
