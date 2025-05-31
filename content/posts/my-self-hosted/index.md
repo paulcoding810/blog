@@ -1,18 +1,27 @@
 ---
-date: '2024-09-08T10:06:54+07:00'
-lastmod: '2024-09-10T22:08:00+07:00'
+date: "2024-09-08T10:06:54+07:00"
+lastmod: "2024-09-10T22:08:00+07:00"
 draft: false
-title: 'My Self-hosted Services'
-summary: 'List of my self-hosted containers and their purposes'
+title: "My Self-hosted Services"
+summary: "List of my self-hosted containers and their purposes"
 categories:
-- Code
+  - Code
+  - DevOps
 tags:
-- self-hosted
-- docker
+  - self-hosted
+  - home-server
+  - docker
 ---
 
 This page lists the various self-hosted services I run on my home server. Each service is containerized using Docker for easy management and isolation.
 
+## Diagram
+
+Here is a diagram of my self-hosted services architecture. It shows how different services are connected and interact with each other.
+
+{{< iframe width="100%" height="300" src="https://viewer.diagrams.net/index.html?tags=%7B%7D&lightbox=1&highlight=0000ff&layers=1&nav=1&title=selfhosted.drawio&dark=auto#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1kT-oJpY_c_aLO7QpotRCsvQrbFybsD9B%26export%3Ddownload#%7B%22pageId%22%3A%22R4NnE7LfKgVYt1rlzEW9%22%7D" >}}
+
+Here is the homepage for quick access to all my self-hosted services:
 ![homepage](./homepage.png)
 
 ## Network
@@ -75,7 +84,7 @@ This page lists the various self-hosted services I run on my home server. Each s
 : Companion application to Sonarr and Radarr for managing subtitles. Automatically downloads and manages subtitles for my media.
 
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/prowlarr.png" alt="Prowlarr" width="16" height="16" >}} [Prowlarr](https://github.com/Prowlarr/Prowlarr)
-: Indexer manager/proxy for Sonarr, Radarr, Lidarr, etc. Centralizes and manages indexers for various *arr applications.
+: Indexer manager/proxy for Sonarr, Radarr, Lidarr, etc. Centralizes and manages indexers for various \*arr applications.
 
 {{< icon src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/lidarr.png" alt="Lidarr" width="16" height="16" >}} [Lidarr](https://lidarr.audio/)
 : Music collection manager for Usenet and BitTorrent users. Automates music downloads and organization.
