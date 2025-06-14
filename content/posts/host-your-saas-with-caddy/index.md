@@ -1,15 +1,17 @@
 ---
-date: '2024-09-18T23:17:41+07:00'
+date: "2024-09-18T23:17:41+07:00"
 draft: false
-title: 'Host Your SaaS with Caddy'
-summary: 'A comprehensive guide to hosting your services securely using Caddy as a reverse proxy'
+title: "Host Your SaaS with Caddy"
+summary: "A comprehensive guide to hosting your services securely using Caddy as a reverse proxy"
 categories:
-- DevOps
+  - DevOps
 tags:
-- caddy
-- docker
-- cloudflare
-- reverse-proxy
+  - caddy
+  - docker
+  - cloudflare
+  - reverse-proxy
+  - dns
+  - self-hosted
 ---
 
 ## Table of Contents
@@ -209,11 +211,11 @@ Add your services to the same network in their respective Docker Compose files o
 
 After configuration, you should be able to access your services via their respective subdomains:
 
-| Subdomain   | Screenshot |
-|-----------  |------------|
-| [download.paulcoding.com](https://download.paulcoding.com)  | ![JDownloader](./subdomain-download.png) |
-| [home.paulcoding.com](https://home.paulcoding.com)  | ![Glances](./subdomain-home.png) |
-| [speed.paulcoding.com](https://speed.paulcoding.com)  | ![Speedtest](./subdomain-speed.png) |
+| Subdomain                                                  | Screenshot                               |
+| ---------------------------------------------------------- | ---------------------------------------- |
+| [download.paulcoding.com](https://download.paulcoding.com) | ![JDownloader](./subdomain-download.png) |
+| [home.paulcoding.com](https://home.paulcoding.com)         | ![Glances](./subdomain-home.png)         |
+| [speed.paulcoding.com](https://speed.paulcoding.com)       | ![Speedtest](./subdomain-speed.png)      |
 
 If not on the LAN, you'll see an access denied message:
 
@@ -222,20 +224,33 @@ If not on the LAN, you'll see an access denied message:
 ## Troubleshooting
 
 1. **SSL Certificate Issues**
+
    - Ensure your Cloudflare API token has the correct permissions
    - Check Caddy logs for specific SSL-related errors
 
 2. **Service Unreachable**
+
    - Verify that the service is running and on the correct Docker network
    - Check if the port in the Caddyfile matches the service's exposed port
 
 3. **Configuration Not Updating**
+
    - After changing the Caddyfile, remember to reload Caddy
    - If changes don't take effect, try restarting the Caddy container
 
 4. **LAN-only Access Not Working**
+
    - Verify your local network's IP range in the `LAN_only` snippet
    - Ensure the `import LAN_only` directive is correctly placed in each service block
+
+5. **Hmm. We’re having trouble finding that site**
+   - If you encounter a "site not found" error on macOS, ensure that your DNS settings are correctly configured to resolve the subdomains to your server's IP address. You may need to flush your DNS cache or update your `/etc/hosts` file for local testing.
+   - To flush the DNS cache on macOS, run:
+
+   ```sh
+   # May need to spam this command a few times 😂
+   sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+   ```
 
 ## Conclusion
 
