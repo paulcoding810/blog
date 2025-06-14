@@ -9,10 +9,10 @@ categories:
 - Development
 - DevOps
 tags:
-- Docker
-- Docker Compose
-- Containers
-- CLI
+- docker
+- docker-compose
+- containers
+- cli
 
 ---
 
@@ -76,10 +76,8 @@ docker compose top
 docker stats --no-stream
 
 # Sort containers by resource usage, by memory descending
-docker stats --no-stream --format "table {{.Container}}\t{{.MemUsage}}" | sort -k2 -r
+docker stats --no-stream | sort -k 4 -h -r
 
-### Building Images
-```bash
 # Build or rebuild services
 docker compose build
 
