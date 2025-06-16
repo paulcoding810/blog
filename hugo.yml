@@ -21,12 +21,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Paul Coding
+  description: "Paul Coding's blog about programming, technology, and life experiences."
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -80,15 +80,19 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: Welcome to my blog :))
 
   socialIcons:
-    - name: x
-      url: "https://x.com/Long36691455"
-    - name: stackoverflow
-      url: "https://stackoverflow.com/users/16443979/paul"
+    # - name: x
+    #   url: "https://x.com/Long36691455"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com/users/16443979/paul"
     - name: github
       url: "https://github.com/paulcoding810"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/nguyen-long-nghia/"
+    - name: RSS
+      url: "index.xml"
 
   # analytics:
   #   google:
@@ -121,14 +125,18 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: Archive
+      name: Archive
+      url: archives/
+      weight: 5
+    - identifier: Search
+      name: Search
+      url: search/
       weight: 10
     - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
+      name: Tags
+      url: tags/
+      weight: 10
     # - identifier: example
     #   name: example.org
     #   url: https://example.org
@@ -143,3 +151,9 @@ markup:
     guessSyntax: true
     # lineNos: true
     style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
