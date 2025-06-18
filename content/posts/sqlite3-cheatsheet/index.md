@@ -136,3 +136,9 @@ COMMIT; -- or ROLLBACK;
 ```
 
 ---
+
+## External Resources
+
+- [Command Line Shell For SQLite](https://sqlite.org/cli.html)
+
+---
