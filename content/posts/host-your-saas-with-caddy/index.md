@@ -14,23 +14,6 @@ tags:
   - self-hosted
 ---
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [1. Setting up Caddy with Docker](#1-setting-up-caddy-with-docker)
-  - [Docker Compose Configuration](#docker-compose-configuration)
-  - [Dockerfile for Caddy](#dockerfile-for-caddy)
-  - [Environment Variables](#environment-variables)
-  - [Caddy Configuration](#caddy-configuration)
-- [2. Configuring Services](#2-configuring-services)
-- [3. Testing Your Setup](#3-testing-your-setup)
-- [Troubleshooting](#troubleshooting)
-- [Conclusion](#conclusion)
-- [Next Steps](#next-steps)
-- [References](#references)
-
 ## Introduction
 
 [Caddy](https://caddyserver.com/docs/) is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go. It's known for its simplicity and ease of use, making it an excellent choice for hosting SaaS applications. This guide will walk you through setting up a secure hosting environment for your services using Caddy as a reverse proxy.
