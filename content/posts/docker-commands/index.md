@@ -1,19 +1,16 @@
-
 ---
-date: '2025-01-22T14:12:36+07:00'
+date: "2025-01-22T14:12:36+07:00"
 draft: false
-title: 'Essential Docker Commands for Daily Use'
-summary: 'A comprehensive guide to commonly used Docker and Docker Compose commands'
+title: "Essential Docker Commands for Daily Use"
+summary: "A comprehensive guide to commonly used Docker and Docker Compose commands"
 categories:
-
-- Development
-- DevOps
+  - Development
+  - DevOps
 tags:
-- docker
-- docker-compose
-- containers
-- cli
-
+  - docker
+  - docker-compose
+  - containers
+  - cli
 ---
 
 ## Basic Docker Compose Commands
@@ -58,7 +55,11 @@ docker compose exec container_name bash
 docker compose exec container_name command
 ```
 
-## Additional Useful Commands
+### Copy Files from Containers
+
+```bash
+docker cp container_id:/path/to/file ./destination
+```
 
 ### Container Management
 
@@ -83,16 +84,9 @@ docker compose build
 
 # Build with no cache
 docker compose build --no-cache
-```
 
-### Troubleshooting
-
-```bash
-# Check compose configuration
+### Validate Compose Configuration
 docker compose config
-
-# View container events
-docker compose events
 ```
 
 ## Best Practices
