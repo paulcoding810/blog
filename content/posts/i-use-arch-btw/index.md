@@ -90,7 +90,7 @@ mount /dev/nvme0n1p1 /mnt/boot
 Install essential packages:
 
 ```sh
-pacstrap -K /mnt base base-devel linux linux-firmware git btrfs-progs grub efibootmgr zsh vim networkmanager
+pacstrap -K /mnt base base-devel linux linux-firmware git grub efibootmgr inotify-tools timeshift vim networkmanager pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber reflector zsh zsh-completions zsh-autosuggestions openssh man sudo
 ```
 
 ### Generating `fstab`
@@ -123,6 +123,7 @@ EDITOR=vim visudo
 Uncomment this line in `visudo`:
 
 ```sh
+# Users in group wheel can run anything on any machine as any user
 %wheel ALL=(ALL:ALL) ALL
 ```
 
@@ -236,7 +237,7 @@ echo "password=yourpassword" | sudo tee -a /etc/samba/credentials
 
 ## Conclusion
 
-Installing Arch Linux isn't as terrifying as it seems, especially with AI to guide you. While I'll stick to my Mac for work, Arch Linux is now my go-to for personal NAS adventures.
+Installing Arch Linux isn't as terrifying as it seems, especially with AI to guide you. While I'll stick to my Mac for work, Arch Linux is now my go-to for personal NAS adventures. Whaterver, I'm finally saying it:
 
 I use Arch, BTW. 😉
 
