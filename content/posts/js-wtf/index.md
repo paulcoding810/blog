@@ -1,7 +1,7 @@
 ---
 date: "2025-07-11T22:20:20+07:00"
 draft: false
-title: "JavaScript WTF?"
+title: "JS WTF?"
 summary: "Exploring fascinating JavaScript."
 categories:
   - Code
