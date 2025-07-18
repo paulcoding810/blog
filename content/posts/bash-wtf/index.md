@@ -104,6 +104,12 @@ It will continue until it sees EOF.
 EOF
 ```
 
+```sh
+while read -r id; do
+  # some commands using $id
+done <<< "$ids"
+```
+
 Learn more: [GNU Bash Manual - Here Documents](https://www.gnu.org/software/bash/manual/html_node/Here-Documents.html)
 
 ### Grouping Commands with \{\}
