@@ -16,7 +16,7 @@ Yes, the time has finally come. I finally gave Arch Linux a shot. Took me a whil
 
 ## Why Arch Linux?
 
-I was looking for a simple but powerful setup for a NAS, and Arch Linux with Samba just made sense. It does exactly what I need, no extra fluff. Honestly, I got inspired by this very [comment](https://old.reddit.com/r/homelab/comments/1g3rx0z/nas_os_only_for_storage_no_bells_or_whistles/lrye5nz/) I came across, and it really clicked.
+I was looking for a simple yet powerful setup for a NAS, and Arch Linux with Samba just made sense. It does exactly what I need, no extra fluff. Honestly, I got inspired by this very [comment](https://old.reddit.com/r/homelab/comments/1g3rx0z/nas_os_only_for_storage_no_bells_or_whistles/lrye5nz/) I came across, and it really clicked.
 
 ## Installing Arch Linux
 
