@@ -227,6 +227,7 @@ If not on the LAN, you'll see an access denied message:
    - Ensure the `import LAN_only` directive is correctly placed in each service block
 
 5. **Hmm. We’re having trouble finding that site**
+
    - If you encounter a "site not found" error on macOS, ensure that your DNS settings are correctly configured to resolve the subdomains to your server's IP address. You may need to flush your DNS cache or update your `/etc/hosts` file for local testing.
    - To flush the DNS cache on macOS, run:
 
@@ -234,6 +235,9 @@ If not on the LAN, you'll see an access denied message:
    # May need to spam this command a few times 😂
    sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
    ```
+
+6. **DDNS not working**
+   - Maybe due to Domain Renewal -> [Recreate api token](https://github.com/DoTheEvo/selfhosted-apps-docker/tree/master/caddy_v2#--create-api-token-on-cloudflare)
 
 ## Conclusion
 
