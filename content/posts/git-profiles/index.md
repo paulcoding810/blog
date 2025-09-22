@@ -4,17 +4,17 @@ draft: false
 summary: No more git config name and email. Git profiles will handle that for you.
 title: Git Profiles
 categories:
-- Code
+  - Code
 tags:
-- ssh
-- git
+  - ssh
+  - git
 ---
 
 - Update Mar 2nd, 2025: [Add signing commits](#sign-commits)
 
 ## What is it?
 
-Each time you create or clone a Git repository, you need to configure the `user.name` and `user.email`  (and SSH for private repos).
+Each time you create or clone a Git repository, you need to configure the `user.name` and `user.email` (and SSH for private repos).
 
 I often forget to do this, and sometimes I don't remember my no-reply email address. Here's a solution.
 
@@ -49,7 +49,7 @@ Append these lines at the end of your `~/.gitconfig`
 
 Explain:
 
-- The first `include` tells Git to apply the personal profile for *every* path. This is considered the default profile.
+- The first `include` tells Git to apply the personal profile for _every_ path. This is considered the default profile.
 - The `includeIf` directives tells git to apply the `work1.config` for every path under `~/work1/`, and `work2.config` for subfolders of `~/work2/`
 
 ## Sign commits
@@ -69,6 +69,8 @@ To sign commits, you can add the following lines to the profile configuration.
 [commit]
   gpgsign = true
 ```
+
+On github, [add new ssh public key](https://github.com/settings/ssh/new) with key type "Signing key"
 
 ## Conclusion
 
