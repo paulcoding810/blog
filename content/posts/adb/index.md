@@ -1,12 +1,12 @@
 ---
 categories:
-- Code
+  - Code
 date: "2024-07-22T09:22:25+07:00"
 draft: false
 summary: List of my most used ADB commands
 tags:
-- adb
-- android
+  - adb
+  - android
 title: Common ADB Commands
 ---
 
@@ -47,7 +47,7 @@ adb shell wm density 390
 # get proxy
 adb shell settings get global http_proxy
 # set proxy
-adb shell settings put global http_proxy server_ip:server_port 
+adb shell settings put global http_proxy server_ip:server_port
 # remove proxy
 adb shell settings put global http_proxy :0
 ```
@@ -66,7 +66,7 @@ adb push avatar.jpg /storage/emulated/0/Download
 # pull file
 adb shell pm path com.kugou.shiqutouch
 adb pull "/data/app/~~xpKM66cgiEbqpkAmw5bUnQ==/com.kugou.shiqutouch-UG94g9pPeK1JHJrxI7yGfQ==/base.apk" ~/Downloads/app.apk
- ```
+```
 
 ## Config
 
@@ -76,6 +76,8 @@ adb pull "/data/app/~~xpKM66cgiEbqpkAmw5bUnQ==/com.kugou.shiqutouch-UG94g9pPeK1J
 adb shell settings list system
 # show touches
 adb shell settings put system show_touches 1
+# show pointer location overlay
+adb shell settings put system pointer_location 1
 ```
 
 ## Utils
