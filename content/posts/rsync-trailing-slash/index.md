@@ -57,31 +57,34 @@ dest_dir/
 
 Here, the **parent folder _is_ included**.
 
+#### 3️⃣ 🧠 What Happens With `.`
+
+`.` already means:
+
+> “the contents of the current directory”
+
+There is no parent folder name to recreate.
+
+So both of these:
+
+```bash
+rsync -av . /backup/
+rsync -av ./ /backup/
+```
+
+Will copy:
+all files and folders inside current directory
+
 ---
 
-### If you mean “move” instead of copy
+### 🧩 Quick Summary
 
-`rsync` is a copy tool. To _move_, you add:
-
-```bash
---remove-source-files
-```
-
-…but that **only removes files, not directories**, so you’d usually follow with:
-
-```bash
-find source_dir -type d -empty -delete
-```
-
-Or just use:
-
-```bash
-mv source_dir dest_dir/
-```
-
-if it’s local and simple.
-
----
+| Source    | Result                        |
+| --------- | ----------------------------- |
+| `folder`  | creates `dest/folder/`        |
+| `folder/` | copies contents only          |
+| `.`       | copies contents               |
+| `./`      | copies contents (same as `.`) |
 
 ### TL;DR
 
