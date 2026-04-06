@@ -1,17 +1,16 @@
 ---
-title: 'Setting Up mitmproxy to Debug API Requests'
-date: '2025-06-03T00:00:00+07:00'
+title: "Setting Up mitmproxy to Debug API Requests"
+date: "2025-06-03T00:00:00+07:00"
 draft: false
 categories:
-    - Code
+  - Code
 tags:
-    - adb
-    - android
-    - ios
-    - mitm
-summary: 'Learn how to inspect API requests from your mobile device using mitmproxy.'
+  - adb
+  - android
+  - ios
+  - mitm
+summary: "Learn how to inspect API requests from your mobile device using mitmproxy."
 ---
-
 
 ## Getting Started with mitmproxy
 
@@ -30,24 +29,63 @@ mitmweb -p 8888 &
 ## Configuring iOS Devices
 
 1. **Set Up Proxy:**  
-     In your Wi-Fi settings, configure the HTTP proxy to your computer’s IP address and port `8888`.
+   In your Wi-Fi settings, configure the HTTP proxy to your computer's IP address and port `8888`.
 
-2. **Install mitmproxy Certificate:**  
-     - Open Safari and navigate to:  
-       `http://mitm.it`
-     - Select iOS and follow the instructions to download the mitmproxy certificate.
-     - Install the certificate by going to:  
-       `Settings > General > Profile`  
-       Tap on the downloaded profile and install it.
+2. **Install mitmproxy Certificate:**
+
+- Open Safari and navigate to:  
+  `http://mitm.it`
+- Select iOS and follow the instructions to download the mitmproxy certificate.
+- Install the certificate by going to:  
+  `Settings > General > Profile`  
+  Tap on the downloaded profile and install it.
 
 3. **Enable Full Trust:**  
-     Navigate to:  
-     `Settings > General > About > Certificate Trust Settings`  
-     Enable full trust for the mitmproxy root certificate.
+   Navigate to:  
+   `Settings > General > About > Certificate Trust Settings`  
+   Enable full trust for the mitmproxy root certificate.
+
+4. **Optional - Simulator Certificate Installation:**  
+   For iOS simulators, you can install the certificate directly using:
+
+```sh
+xcrun simctl keychain booted add-root-cert /path/to/cert.pem
+```
 
 ---
 
 ## Configuring Android Devices
+
+### Debugging app
+
+app/src/main/res/xml/network_security_config.xml
+
+```xml
+<network-security-config>
+    <debug-overrides>
+        <trust-anchors>
+            <!-- Trust user added CAs while debuggable only -->
+            <certificates src="user" />
+            <certificates src="system" />
+        </trust-anchors>
+    </debug-overrides>
+
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+```
+
+Android manifest
+
+```xml
+<application
+      android:networkSecurityConfig="@xml/network_security_config"
+/>
+```
 
 ### Option 1: Manual Proxy
 
@@ -65,15 +103,15 @@ mitmweb -p 8888 &
 1. Connect your Android device via ADB.
 2. Set the proxy:
 
-     ```sh
-     adb shell settings put global http_proxy <client-ip>:8888
-     ```
+   ```sh
+   adb shell settings put global http_proxy <client-ip>:8888
+   ```
 
 3. **Remove Proxy (when finished):**
 
-     ```sh
-     adb shell settings put global http_proxy :0
-     ```
+   ```sh
+   adb shell settings put global http_proxy :0
+   ```
 
 > **Note:**  
 > Remember to disable the proxy when you’re done. If not, your device may lose internet access when mitmproxy is not running.
