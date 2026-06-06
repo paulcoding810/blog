@@ -1,6 +1,6 @@
 ---
 date: "2026-05-30T09:18:52+07:00"
-draft: true
+draft: false
 title: "Converting OnePlus 15 Chinese ROM to Global OxygenOS"
 summary: "Complete guide to converting ColorOS to OxygenOS on OnePlus 15 Chinese models"
 categories:

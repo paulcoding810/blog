@@ -1,15 +1,15 @@
 ---
-date: '2024-11-23T08:41:00+07:00'
+date: "2024-11-23T08:41:00+07:00"
 draft: false
-title: 'Rhino Cheatsheet'
-summary: 'Execute Javascript in Kotlin using Rhino'
+title: "Rhino Cheatsheet"
+summary: "Execute Javascript in Kotlin using Rhino"
 categories:
-- Code
+  - Code
 tags:
-- rhino
-- javascript
-- kotlin
-- chatgpt
+  - rhino
+  - javascript
+  - kotlin
+  - chatgpt
 ---
 
 {{< gpt >}}
@@ -249,21 +249,36 @@ context.setGeneratingDebug(true) // Generate debug info
 Common issues and solutions when working with Rhino:
 
 #### Syntax Errors
+
 - Error: "missing ; before statement (#15)"
   - Cause: Using Kotlin keywords (like `val`) in JavaScript code
   - Solution: Replace Kotlin keywords with JavaScript equivalents (use `var` or `let`)
 
 #### Type Conversion Issues
+
 - Error: "stack overflow: unexpected Object instead of string"
   - Cause: Automatic type conversion failing between JavaScript and Kotlin
   - Solution: Explicitly convert objects to strings using `String()` or `toString()`
   - Example: `String(title)` instead of just `title`
 
+#### Empty result
+
+- Check if param/args is `org.mozilla.javascript.ConsString` using `obj::class` or `obj as String`
+
+#### JsonDecodingException
+
+| kotlinx.serialization.json.internal.JsonDecodingException: Unexpected JSON token at offset 11: Expected colon ':', but had ',' instead at path: $
+
+| kotlinx.serialization.json.internal.JsonDecodingException: Expected class kotlinx.serialization.json.JsonObject as the serialized body of kotlin.collections.LinkedHashMap, but had class kotlinx.serialization.json.JsonLiteral
+
+=> Input contains nested objects and non-string values
+=> manually extract nested object
+
 #### Other Tips
+
 - Always check JavaScript syntax is valid
 - Use strict mode (`'use strict';`) to catch errors early
 - Enable debugging as shown in debugging section above
-
 
 ---
 

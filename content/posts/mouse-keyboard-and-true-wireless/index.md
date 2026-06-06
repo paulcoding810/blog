@@ -53,6 +53,10 @@ tags:
 - **Short Press** (Forward + Middle buttons): Cycle RGB lighting effects
 - **Long Press** (Forward + Middle, 3 seconds): Toggle RGB lighting
 
+## WITRN K2
+
+[Home page](https://www.witrn.com//?p=2105)
+
 ## Community
 
 [Cuồng Tai nghe True Wireless](https://www.facebook.com/groups/750279539095674/)

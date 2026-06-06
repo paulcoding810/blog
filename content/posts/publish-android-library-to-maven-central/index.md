@@ -4,12 +4,12 @@ draft: false
 title: "Publishing Android Library to Maven Central"
 summary: "A comprehensive guide on how to publish an Android library to Maven Central"
 categories:
-- Code
+  - Code
 tags:
-- maven
-- android
-- kotlin
-- gradle
+  - maven
+  - android
+  - kotlin
+  - gradle
 ---
 
 - Updated on 2025-02-22 [Added Github Actions section](#github-actions)
@@ -102,7 +102,9 @@ If you're using your own domain, you'll need to verify it by adding a TXT record
 
 1. Export your secret keys at `~/.gnupg/`
 
-```bash
+```sh
+chmod 700 {}
+gpg --full-generate-key
 gpg --export-secret-keys -o secring.gpg
 ```
 
